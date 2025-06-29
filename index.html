@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dinesh M | Interactive Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- CSS and JS will be linked externally in next steps -->
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pF2zRlGWrC4ZQ1n+2AYBRvOQoDZvVXfZBSgHBrCZxEAmXWzwXbPw+/qIq9a5F+1bD4ZZBzYwC4Kj0Tr4t3VfPA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Typed.js for dynamic typing effect -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="global-animated-bg"></div>
+
+  <div id="loader">Loading Dinesh's Portfolio...</div>
+  <nav>
+    <h1 id="navName">Dinesh</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+<header>
+
+  <div class="portal-background"></div>
+  <div class="aurora-wrapper"></div>
+  <div class="header-content">
+    <h1 class="portal-title">Dinesh M</h1>
+    <p>Computer Technology Student</p>
+  </div>
+
+
+</header>
+
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="card about-me">
+    <p>
+      Hello! I'm <strong>Dinesh M</strong>, an aspiring software developer currently pursuing a B.Sc. in Computer Technology at Sri Ramakrishna College of Arts & Science (2023–2026). With a strong academic foundation (CGPA: 8.34) and a growing passion for artificial intelligence and system development, I enjoy exploring how technology can solve real-world problems.
+    </p>
+    <p>
+      I'm not just focused on academics — I actively participate in national and internal hackathons, including the <strong>National-Level Road Safety Hackathon</strong> where I was a Grand Finale finalist. I've also delivered hands-on mini projects like <em>Safe-Drive</em> and an <em>E-Library</em> platform that supports student learning.
+    </p>
+    <p>
+      I've completed internships in <strong>Python Programming</strong> and <strong>Embedded Systems with IoT</strong>. Currently serving as the <strong>Chairman of the Computer Technology Department</strong>, I also take pride in mentoring peers and organizing tech events.
+    </p>
+    <p>
+      I believe in continuous learning, creative thinking, and teamwork — and I’m excited to grow as a developer who builds impactful solutions that matter.
+    </p>
+  </div>
+<div class="flip-bio-grid">
+  <div class="flip-card">
+    <div class="flip-inner">
+      <div class="flip-front">🎓 Education</div>
+      <div class="flip-back">
+        B.Sc. Computer Technology @ SRCAS (2023–2026)<br>CGPA: 8.34
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="flip-card">
+    <div class="flip-inner">
+      <div class="flip-front">💻 Projects</div>
+      <div class="flip-back">
+        Safe-Drive | E-Library | Portfolio Webpage
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-inner">
+      <div class="flip-front">🛠️ Internships</div>
+      <div class="flip-back">
+        Python Programming<br>Embedded Systems with IoT
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-inner">
+      <div class="flip-front">👑 Responsibility</div>
+      <div class="flip-back">
+        Chairman <br> Department of Computer Technology
+      </div>
+    </div>
+  </div>
+</div>
+
+  </section>
+
+  <section id="skills">
+  <h2 class="section-title">My Skills</h2>
+
+  <div class="skills-category-grid">
+
+    <div class="skill-category">
+      <h3>🌐 Web Development</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Prompt Engineering</li>
+      </ul>
+    </div>
+
+    <div class="skill-category">
+      <h3>💡 Programming</h3>
+      <ul>
+        <li>Python</li>
+        <li>Java Basics</li>
+        <li>C Basics</li>
+        <li>SQL Basics</li>
+        
+      </ul>
+    </div>
+
+    <div class="skill-category">
+      <h3>🛠️ Tools & Platforms</h3>
+      <ul>
+        <li>Microsoft Excel</li>
+        <li>GitHub</li>
+        <li>ChatGPT / Open AI</li>
+        <li>Canva</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+  <section id="projects">
+  <h2 class="section-title">Projects</h2>
+ <div class="typewriter">Turning Ideas into Interactive Reality...</div>
+
+  <div class="projects-modal-grid">
+
+    <div class="project-card" onclick="openModal('safeDrive')">
+      <img src="safedrive.jpg" alt="Safe-Drive">
+      <h3>Safe-Drive</h3>
+    </div>
+
+    <div class="project-card" onclick="openModal('eLibrary')">
+      <img src="e-library.jpg" alt="E-Library">
+      <h3>E-Library</h3>
+    </div>
+
+    <div class="project-card" onclick="openModal('portfolio')">
+      <img src="portfolio.jpg" alt="Portfolio">
+      <h3>Portfolio Website</h3>
+    </div>
+
+  </div>
+
+  <!-- Modals -->
+  <div id="safeDrive" class="project-modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('safeDrive')">&times;</span>
+      <h3>Safe-Drive</h3>
+      <p>A smart alert system, used to alert drivers in sensitive zones, helps to prevent from accidents</p>
+      <a href="https://safedrive-webapplication.github.io/safe-drive/" target="_blank">View Safe-Drive</a>
+    </div>
+  </div>
+
+  <div id="eLibrary" class="project-modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('eLibrary')">&times;</span>
+      <h3>E-Library</h3>
+      <p>A digital book platform for students with search, borrow, and return E-Learing Resources.</p>
+      <a href="https://e-library-srcas.github.io/E-Library/" target="_blank">View E-Library</a>
+    </div>
+  </div>
+
+  <div id="portfolio" class="project-modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('portfolio')">&times;</span>
+      <h3>Portfolio Website</h3>
+      <p>This custom-made personal site you're viewing — built with HTML, CSS, and JS.</p>
+    </div>
+  </div>
+
+</section>
+
+
+
+<section id="gallery">
+  <h2 class="section-title">My Certificates</h2>
+
+  <div class="certificate-gallery">
+
+    <!-- Road Safety Hackathon -->
+    <div class="certificate-card">
+      <img src="Road_Safety_Hackathon_Certificate.jpg" alt="Road Safety Hackathon" onclick="openLightbox(this)">
+      <p>🏆 <strong>Finalist</strong><br>
+        <small>National Road Safety Hackathon 2025<br>
+        Organized by Tamil Nadu Police & UYIR<br>
+        <em>Feb 8–9, 2025 – Coimbatore</em></small></p>
+    </div>
+
+    <!-- Debugging Event -->
+    <div class="certificate-card">
+      <img src="debugging-event.jpg" alt="Debugging Winner" onclick="openLightbox(this)">
+      <p>🥇 <strong>1st Place – Debugging Contest</strong><br>
+        <small>CompuTronix Fest, Dept. of Computer Technology<br>
+              </small></p>
+    </div>
+
+    <!-- 10H Hackathon -->
+    <div class="certificate-card">
+      <img src="10h-hackathon.jpg" alt="10 Hour Hackathon" onclick="openLightbox(this)">
+      <p>💻 <strong>Participant – 10H Hackathon</strong><br>
+        <small>Innovation Centre & CTPCR, SRCAS<br>
+        <em>Feb 18, 2025</em></small></p>
+    </div>
+
+    <!-- IoT Internship -->
+    <div class="certificate-card">
+      <img src="Iot-Intern.jpg" alt="Embedded and IoT Internship" onclick="openLightbox(this)">
+      <p>🔧 <strong>Embedded & IoT Internship</strong><br>
+        <small>Gateway Software Solutions<br>
+        <em>May 5–22, 2025 – Coimbatore</em></small></p>
+    </div>
+
+  </div>
+
+  <!-- Lightbox Preview -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Preview">
+  </div>
+</section>
+
+ 
+
+  <div id="backToTop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</div>
+
+  <section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <div class="card contact-info">
+
+  <p>📧 <strong>Email:</strong> <a href="mailto:dineshryze@gmail.com">dineshryze@gmail.com</a></p>
+  <p>📞 <strong>Phone:</strong> +91 86109 51813</p>
+  <p📍 <strong>Location:</strong> Gandhimanagar, Coimbatore</p>
+  <p>📸 <strong>Instagram:</strong> <a href="https://instagram.com/dinnnnesh" target="_blank">@dinnnnesh</a></p>
+
+  <div class="social-icons">
+    <a href="https://linkedin.com/in/your-profile" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/your-username" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="mailto:dineshryze@gmail.com" title="Send Email"><i class="fas fa-paper-plane"></i></a>
+  </div>
+
+</div>
+
+</section>
+
+
+  
+
+  <footer>
+    &copy; 2025 Dinesh M | Crafted with ❤️ in HTML, CSS & JS
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
